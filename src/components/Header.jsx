@@ -9,9 +9,9 @@ const Header = () => {
   };
 
   return (
-    <div>
+    <div className="header">
       <h1>TASK TRACKER</h1>
-      <button onClick={handleClick} className="btn btn-danger">
+      <button onClick={handleClick} className="btn btn-danger btn-lg m-5 shadow p-3 mb-5 ">
         CLOSE ADD TASK BAR
       </button>
 
