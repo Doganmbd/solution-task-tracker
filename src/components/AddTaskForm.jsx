@@ -2,7 +2,7 @@ import React from "react";
 
 const AddTaskForm = () => {
   return (
-    <div>
+    <div >
       <form className="fs-3">
         <div className="mb-3 ">
           <label htmlFor="text" className="form-label">
