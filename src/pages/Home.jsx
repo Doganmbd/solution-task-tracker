@@ -18,10 +18,11 @@ const Home = () => {
   return (
     <div className="container mt-5">
       <Header localData={localData} setLocalData={setLocalData} />
-      <ShowTask
+      {localData.length>0 ? ( <ShowTask
         localData={localData}
         setLocalData={setLocalData} /* data={data} */
-      />
+      />): ( <p className="text-center fs-3 ">NO TASK TO SHOW</p> )}
+     
     </div>
   );
 };
