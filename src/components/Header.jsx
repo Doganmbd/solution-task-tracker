@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import AddTaskForm from "./AddTaskForm";
 
-const Header = () => {
+const Header = ({localData,setLocalData}) => {
   const [showAdd, setShowAdd] = useState(false);
 
   const handleClick = () => {
@@ -15,7 +15,7 @@ const Header = () => {
         CLOSE ADD TASK BAR
       </button>
 
-      {showAdd && <AddTaskForm /> }
+      {showAdd && <AddTaskForm localData={localData} setLocalData={setLocalData} /> }
 
       
     </div>
