@@ -35,6 +35,13 @@ body {
   cursor: pointer;
 }
 
+.done {
+  border-left: 20px solid purple;
+  text-decoration: line-through;
+  background-color: darkgrey;
+
+}
+
 .showButon h3 {
   display: flex;
   align-items: center;
